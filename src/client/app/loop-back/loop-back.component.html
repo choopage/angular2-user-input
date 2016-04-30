@@ -1,0 +1,6 @@
+<p>
+  loop-back Works!
+</p>
+
+<input type="text" #box (keyup.enter)="onKey(box.value)" (blur)="value=box.value">
+{{value}}

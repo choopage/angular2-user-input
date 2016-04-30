@@ -1,6 +1,10 @@
 const barrels: string[] = [
   'app',
   'app/shared',
+  'app/click-me',
+  'app/keyup-component',
+  'app/key-up',
+  'app/loop-back',
   /** @cli-barrel */
 ];
 

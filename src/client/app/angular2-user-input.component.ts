@@ -1,21 +1,16 @@
 import {Component} from 'angular2/core';
-import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
+import {ClickMeComponent} from './click-me/click-me.component';
+import {KeyUpComponent} from './key-up/key-up.component';
+import {LoopBackComponent} from './loop-back/loop-back.component';
 
 @Component({
   moduleId: __moduleName,
   selector: 'angular2-user-input-app',
-  providers: [ROUTER_PROVIDERS],
   templateUrl: 'angular2-user-input.component.html',
   styleUrls: ['angular2-user-input.component.css'],
-  directives: [ROUTER_DIRECTIVES],
-  pipes: []
+  directives: [ClickMeComponent, KeyUpComponent, LoopBackComponent]
 })
-@RouteConfig([
-])
-export class Angular2UserInputApp {
-  defaultMeaning: number = 42;
 
-  meaningOfLife(meaning?: number) {
-    return `The meaning of life is ${meaning || this.defaultMeaning}`;
-  }
+export class Angular2UserInputApp {
+
 }
